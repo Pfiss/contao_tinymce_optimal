@@ -78,7 +78,7 @@ if ($GLOBALS['TL_CONFIG']['useRTE']):
                 ]
                 }
             ],
-            plugins: "autosave charmap fullscreen image link lists paste searchreplace  tabfocus template visualblocks",
+            plugins: "autosave charmap fullscreen link lists paste searchreplace  tabfocus template visualblocks",
             external_plugins: {
                 "anchor": "<?php echo TL_PATH; ?>/system/modules/pfiss-contao_tinyMCE_optimal/assets/tinyMCE/plugins/anchor/plugin.min.js",
                 "autoresize": "<?php echo TL_PATH; ?>/system/modules/pfiss-contao_tinyMCE_optimal/assets/tinyMCE/plugins/autoresize/plugin.min.js",
@@ -93,7 +93,7 @@ if ($GLOBALS['TL_CONFIG']['useRTE']):
             content_css: "<?php echo TL_PATH; ?>/system/themes/tinymce.css,<?php echo TL_PATH . '/' . Config::get('uploadPath'); ?>/tinymce.css",
             extended_valid_elements: "q[cite|class|title],article,section,hgroup,figure,figcaption",
             menubar: "file edit insert view format table",
-            toolbar: "undo redo | styleselect | image link anchor | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | fullscreen"
+            toolbar: "undo redo | styleselect | link anchor | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | fullscreen"
         });
     </script>
 <?php endif; ?>
