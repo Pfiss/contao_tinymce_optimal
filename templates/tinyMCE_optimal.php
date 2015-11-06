@@ -80,10 +80,10 @@ if ($GLOBALS['TL_CONFIG']['useRTE']):
             ],
             plugins: "autosave charmap fullscreen image link lists paste searchreplace  tabfocus template visualblocks",
             external_plugins: {
-                "anchor": "<?php echo TL_PATH; ?>/system/modules/pfiss_tinymce_optimal/assets/tinyMCE/plugins/anchor/plugin.min.js",
-                "autoresize": "<?php echo TL_PATH; ?>/system/modules/pfiss_tinymce_optimal/assets/tinyMCE/plugins/autoresize/plugin.min.js",
-                "contextmenu": "<?php echo TL_PATH; ?>/system/modules/pfiss_tinymce_optimal/assets/tinyMCE/plugins/contextmenu/plugin.min.js",
-                "wordcount": "<?php echo TL_PATH; ?>/system/modules/pfiss_tinymce_optimal/assets/tinyMCE/plugins/wordcount/plugin.min.js"
+                "anchor": "<?php echo TL_PATH; ?>/system/modules/pfiss-contao_tinyMCE_optimal/assets/tinyMCE/plugins/anchor/plugin.min.js",
+                "autoresize": "<?php echo TL_PATH; ?>/system/modules/pfiss-contao_tinyMCE_optimal/assets/tinyMCE/plugins/autoresize/plugin.min.js",
+                "contextmenu": "<?php echo TL_PATH; ?>/system/modules/pfiss-contao_tinyMCE_optimal/assets/tinyMCE/plugins/contextmenu/plugin.min.js",
+                "wordcount": "<?php echo TL_PATH; ?>/system/modules/pfiss-contao_tinyMCE_optimal/assets/tinyMCE/plugins/wordcount/plugin.min.js"
             },
             browser_spellcheck: true,
             tabfocus_elements: ":prev,:next",
