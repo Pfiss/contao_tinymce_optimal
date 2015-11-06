@@ -1,0 +1,38 @@
+{
+  "name": "pfiss/contao_tinymce_optimal",
+  "description": "Simple module for contao to customise the tinyMCE to the „optimal“ configuration.",
+  "keywords": [
+    "contao",
+    "tinyMCE",
+    "optimal"
+  ],
+  "type": "contao-module",
+  "license": "LGPL-3.0+",
+  "authors": [
+    {
+      "name": "Friedrich Pfitzmann",
+      "email": "info@pfiss.com",
+      "homepage": "http://www.pfiss.com",
+      "role": "Developer"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/Pfiss/contao_tinyMCE_optimal/issues"
+  },
+  "require": {
+    "php": ">=5.3",
+    "contao/core": ">=3.3,<4.0",
+    "contao-community-alliance/composer-plugin": "*"
+  },
+  "autoload": {
+    "classmap": [
+    ]
+  },
+  "extra": {
+    "contao": {
+      "sources": {
+        "": "system/modules/pfiss-contao_tinyMCE_optimal"
+      }
+    }
+  }
+}
