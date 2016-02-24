@@ -32,6 +32,9 @@ if ($GLOBALS['TL_CONFIG']['useRTE']):
             element_format: "html",
             document_base_url: "<?php echo Environment::get('base'); ?>",
             entities: "160,nbsp,60,lt,62,gt,173,shy",
+            setup: function (editor) {
+                editor.getElement().removeAttribute('required');
+            },
             init_instance_callback: function (editor) {
                 editor.on('focus', function () {
                     Backend.getScrollOffset();
@@ -90,7 +93,9 @@ if ($GLOBALS['TL_CONFIG']['useRTE']):
             importcss_append: true,
             contextmenu: "link anchor | bold italic | bullist numlist charmap",
             importcss_groups: [{title: "<?php echo Config::get('uploadPath'); ?>/tinymce.css"}],
-            content_css: "<?php echo TL_PATH; ?>/system/themes/tinymce.css,<?php echo TL_PATH . '/' . Config::get('uploadPath'); ?>/tinymce.css",
+            content_css: "<?php echo TL_PATH; ?>/system/themes/tinymce.css,<?php echo TL_PATH . '/' . Config::get(
+                    'uploadPath'
+                ); ?>/tinymce.css",
             extended_valid_elements: "q[cite|class|title],article,section,hgroup,figure,figcaption",
             menubar: "file edit insert view format table",
             toolbar: "undo redo | styleselect | link anchor | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | fullscreen"
